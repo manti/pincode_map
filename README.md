@@ -4,7 +4,7 @@ pincode-map
 This is Pincode validate and Map to Locality, City and State.
 
 # Installation
-pip install pincode_map
+`pip install pincode_map`
 
 # Usage
 ```python
