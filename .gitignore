@@ -1,0 +1,10 @@
+
+# Byte-compiled / optimized / DLL files
+*.py[cod]
+
+# Virtual environment
+venv
+
+# Pincode Data
+pincode_map/resources/*
+
