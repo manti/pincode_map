@@ -1,13 +1,13 @@
 from setuptools import setup
 
-setup(name='pincode-map',
+setup(name='pincode_map',
       version='1.0',
       description='Validate and Mapping Pincode to Locality, City and State ',
-      url='https://github.com/manti/pincode-map',
+      url='https://github.com/manti/pincode_map',
       author='Manti HS',
       author_email='manti.rvce@gmail.com',
       license='MIT',
       zip_safe=False,
-      packages=['pincodemap'],
-      package_dir={'pincode-map': 'pincode-map/'},
+      packages=['pincode_map'],
+      package_dir={'pincode_map': 'pincode_map/'},
     )

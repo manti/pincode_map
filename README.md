@@ -4,10 +4,10 @@ pincode-map
 This is Pinode validate and Map to Locality, City and State.
 
 # Installation
-git clone git@github.com:manti/Pincode-map.git pincode-map
+git clone git@github.com:manti/pincode_map.git pincode_map
 
 # Usage
-from pincode-map import PincodeMap
+from pincode_map import PincodeMap
 
 ## Validate
 
