@@ -37,7 +37,7 @@ class PincodeMap():
             return not re.match("\d{6}", pincode) == None and len(pincode) == 6
 
         elif country == 'BZ':    
-            return not re.match("\d{5}\-\d{3}", pincode) == None and len(pincode) == 9    
+            return not re.match("\d{5}\-\d{3}", pincode) == None and len(pincode) == 9
 
         return False
 
@@ -46,8 +46,10 @@ class PincodeMap():
       if not(isinstance(pincode, int) or isinstance(pincode, str)):
           raise ValueError('Invalid input')
       else:
-        pincode = str(pincode)        
-      print self.__location__
+        pincode = str(pincode)
+        if not self.validate(country, pincode):
+          raise ValueError('Invalid Pincode Code')
+
       pincode_details = json.load(open(self.__location__+'/resources/'+country+'.json'))
 
       return pincode_details[str(pincode)]
